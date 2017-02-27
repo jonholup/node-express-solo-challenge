@@ -1,1 +1,6 @@
-/* empty */
+table {
+  border: 1px solid green;
+}
+th {
+    text-align: left;
+}
