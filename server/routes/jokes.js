@@ -23,4 +23,10 @@ router.get('/', function(req, res) {
     res.send(jokes);
 });
 
+router.post('/new', function(req, res) {
+    var newJoke = req.body;
+    jokes.push(newJoke);
+    res.sendStatus(200);
+});
+
 module.exports = router;
